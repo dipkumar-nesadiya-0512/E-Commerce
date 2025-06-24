@@ -1,0 +1,29 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev:build": "tsc --watch",
+        "dev:start": "nodemon build/server.js",
+        "dev": "concurrently npm:dev:*",
+        "build": "tsc",
+        "start": "node build/server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "concurrently": "^9.1.2",
+        "dotenv": "^16.5.0",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.15.0",
+        "sha256": "^0.2.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.2",
+        "@types/jsonwebtoken": "^9.0.9",
+        "@types/node": "^22.15.21",
+        "@types/sha256": "^0.2.2"
+    }
+}
